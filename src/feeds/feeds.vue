@@ -1,5 +1,6 @@
 <template>
-    <span>hello</span>
+hello
 </template>
 
-<style lang="scss" src="../global.scss"></style>
+<script>
+</script>
