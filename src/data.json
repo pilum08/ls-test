@@ -1,21 +1,24 @@
 [
     {
-        "id":"0",
+        "id":0,
         "img":"https://picsum.photos/200",
         "description":"John",
-        "price":"550"
+        "price":8950,
+        "ammount":5
     },
     {
-        "id":"1",
+        "id":1,
         "img":"https://picsum.photos/200",
         "description":"Mary",
-        "price":"550"
+        "price":846,
+        "ammount":4
     },
     {
-        "id":"2",
+        "id":2,
         "img":"https://picsum.photos/200",
         "description":"Jack",
-        "price":"550"
+        "price":2256,
+        "ammount":8
     }
     
 ]

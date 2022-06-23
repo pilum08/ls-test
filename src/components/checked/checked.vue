@@ -9,6 +9,9 @@
        <button class="checked__btn"></button>
     </div>
 </template>
+<style lang="scss" src="./checked.scss" scoped>
+
+</style>
 <script>
 export default {
   props: ['num']
