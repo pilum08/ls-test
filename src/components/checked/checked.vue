@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="checked__delete">
-       <button class="checked__btn"></button>
+       <button class="checked__btn">Удалить отмеченные</button>
     </div>
 </template>
 <style lang="scss" src="./checked.scss" scoped>

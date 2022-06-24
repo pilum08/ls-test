@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-expressions */
+
 <template>
    <ul class="products">
     <li class="products__item" v-for="item in items" :key="item.id">

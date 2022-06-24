@@ -18,7 +18,10 @@
                 <span class="product__price-num">{{price}}</span>
                 <span class="product__currency">р</span>
             </div>
-            <input type="text" class="product__price-amount" :value="ammount">
+            <input type="text" class="product__price-amount" @click="toggleModal" :value="ammount">
+            <popUp
+             v-show="isShowModal"
+      @close="toggleModal"/>
             <div class="product__price-sum">
                 <span class="prouct__sum">{{sum}}</span>
             <span class="product__pcurrency">р</span>
@@ -26,9 +29,12 @@
         </div>
        </div>
     </div>
+
 </template>
 <script>
+import { popUp } from '../popUp'
 export default {
+  components: { popUp },
   props: [
     'number',
     'pic',
@@ -36,8 +42,15 @@ export default {
     'price',
     'ammount',
     'sum'
-  ]
-
+  ],
+  data: () => ({
+    isShowModal: false
+  }),
+  methods: {
+    toggleModal () {
+      this.isShowModal = !this.isShowModal
+    }
+  }
 }
 </script>
 <style lang="scss" scoped src="./product.scss">

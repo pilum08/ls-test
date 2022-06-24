@@ -3,6 +3,7 @@
     <products/>
     <subtotal/>
     <total/>
+
 </template>
 <script>
 import { checked } from '../checked'
