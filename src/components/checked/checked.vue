@@ -2,7 +2,7 @@
     <div class="checked">
         <div class="checked__amount">
             <div class="checked__amount-text">Выделено</div>
-            <div class="checked__amount-num">{{num}}</div>
+            <div class="checked__amount-num">{{this.$store.state.checked}}</div>
         </div>
     </div>
     <div class="checked__delete">

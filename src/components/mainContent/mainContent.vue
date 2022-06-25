@@ -1,5 +1,5 @@
 <template>
-    <checked :num="45"/>
+    <checked/>
     <products/>
     <subtotal/>
     <total/>

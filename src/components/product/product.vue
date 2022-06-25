@@ -1,7 +1,7 @@
 <template>
     <div class="product">
         <div class="product__col">
-            <input class="product__checkbox" type="checkbox">
+            <input class="product__checkbox" type="checkbox" v-model="check" @click="checkInc">
             <span class="product__number">{{number}}</span>
         </div>
         <div class="product__col">
@@ -29,7 +29,6 @@
         </div>
        </div>
     </div>
-
 </template>
 <script>
 import { popUp } from '../popUp'
@@ -44,11 +43,19 @@ export default {
     'sum'
   ],
   data: () => ({
-    isShowModal: false
+    isShowModal: false,
+    check: false
   }),
   methods: {
     toggleModal () {
       this.isShowModal = !this.isShowModal
+    },
+    checkInc () {
+      if (this.check) {
+        this.$store.commit('CHECKED_DEC')
+      } else {
+        this.$store.commit('CHECKED_INC')
+      }
     }
   }
 }

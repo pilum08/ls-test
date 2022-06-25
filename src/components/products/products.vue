@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     getNumber (num) {
-      return Number(num) + 1
+      return num + 1
     },
     getSum (price, ammount) {
       return price * ammount
